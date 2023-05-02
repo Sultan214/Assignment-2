@@ -61,7 +61,7 @@ button {
 }
 
 .third-part img {
-  height: 700px;
+  /* height: 700px; */
   width: 100%;
   padding-top: 50px;
   padding-bottom: 45px;
@@ -92,6 +92,10 @@ button {
 }
 .img-area {
   width: 100%;
+}
+.img-area>button{
+  margin-top: -50px;
+  margin-left:33.33%;
 }
 
 .text-area > p {
@@ -124,7 +128,15 @@ button {
 .activities {
   /* box-sizing: border-box; */
   border: 1px solid #ff900e;
-  padding: 20px;
+  padding:5px;
+  width: 200px;
+  height: 150px;
+  transition: width 4s ease 1s, height 5s, transform 5s;
+}
+.activities:hover{
+  width:250px;
+   transform: rotate(180deg); 
+ 
 }
 
 .sponsor-sec {
@@ -145,4 +157,67 @@ footer {
   background-color: #ff900e1a;
   margin-top: 100px;
   padding: 30px 300px;
+}
+
+/* responsive for mobile device */
+
+@media only screen and (max-width:576px){
+  footer{
+  padding: 10px 100px 10px 100px;
+  height: 100%;
+  }
+
+  .sponsor-logo{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .total-activities{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features-section{
+    flex-direction: column;
+
+  }
+  .img-area img {
+    width: 100%;
+}
+.img-area>button{
+ width: 50%;
+ margin-top: -50px;
+ margin-left:25%;
+
+}
+
+.text-area{
+  padding: 0 15px;
+}
+
+.photos{
+  flex-direction: column-reverse;
+}
+.photos-section {
+ 
+  grid-template-columns: repeat(1, 1fr);
+
+}
+.text-section{
+  margin-top: 10px;
+}
+ header{
+  flex-direction: column;
+  
+}
+nav{
+  margin-bottom: 20px;
+}
+
+
+.activities:hover{
+  width:150px;
+   transform: rotate(180deg); 
+ 
+} */
+
 }
